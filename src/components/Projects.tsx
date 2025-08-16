@@ -26,6 +26,16 @@ const Projects: React.FC = () => {
   live: 'https://kaviya-portfolio-via-whatsapp.vercel.app/', // Add once deployed (GitHub Pages / Netlify / Vercel)
   featured: true,
 },
+{
+  title: 'Secure Vote – Revolutionizing Democracy through Blockchain Technology',
+  description: 'A blockchain-powered e-voting system designed to ensure secure, transparent, and tamper-proof college elections. Built with Ethereum smart contracts and biometric authentication. Initially developed for college elections, the project demonstrates scalability for larger electoral frameworks.',
+  image: '/assets/elect.png', // Replace with your actual screenshot if available
+  tech: ['Blockchain', 'Hyperledger Fabric', 'Ethereum', 'Solidity', 'Node.js', 'Truffle', 'Metamask', 'Docker'],
+  github: 'https://github.com/KaviyaSathasivam/SecureVote', // Replace with your actual repo link
+  live: '', // Not deployed yet
+  featured: true,
+},
+
 
 {
   title: 'SwasthTrack – Patient Health Tracking System',

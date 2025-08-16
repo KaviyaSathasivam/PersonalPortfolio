@@ -29,7 +29,8 @@ const Hero: React.FC = () => {
       clearInterval(roleInterval);
       clearInterval(timeInterval);
     };
-  }, []);
+
+  }, [roles.length]);
 
   const formatTime = (date: Date) => {
     return date.toLocaleTimeString('en-US', {
@@ -72,7 +73,7 @@ const Hero: React.FC = () => {
             className="mx-auto w-40 h-52 rounded-[80%] overflow-hidden border-4 border-white dark:border-gray-700 shadow-xl"
           >
             <img
-              src="./assets/kaviyapic.jpg"
+              src="/assets/kaviyapic.jpg"
               alt="Profile"
               className="w-full h-full object-cover"
             />

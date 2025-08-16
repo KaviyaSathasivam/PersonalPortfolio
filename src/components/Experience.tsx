@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Briefcase, Calendar, MapPin, ExternalLink, Building, Code, Shield } from 'lucide-react';
+import { Briefcase, Calendar, MapPin, ExternalLink, Building, Shield } from 'lucide-react';
 
 interface ExperienceItem {
   title: string;

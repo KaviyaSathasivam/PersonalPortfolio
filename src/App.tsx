@@ -1,4 +1,3 @@
-import React from 'react';
 import { ThemeProvider } from './contexts/ThemeContext';
 import Navigation from './components/Navigation';
 import Hero from './components/Hero';
@@ -7,7 +6,7 @@ import Projects from './components/Projects';
 import Skills from './components/Skills';
 import Experience from './components/Experience';
 import Achievements from './components/Achievements';
-import Certifications from './components/certifications';
+import Certifications from './components/Certifications';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 

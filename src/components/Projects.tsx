@@ -14,13 +14,13 @@ interface Project {
 }
 
 const Projects: React.FC = () => {
-  const [showAll, setShowAll] = React.useState(false);
+  const [showAll, setShowAll] = useState(false);
 
   const projects: Project[] = [
     {
   title: 'Chat-based Portfolio Website',
   description: 'An interactive, WhatsApp-style portfolio with keyword based commands to explore resume, skills, projects, education, Languages and more ,all in a dynamic chat format.',
-  image: './assets/chat-based.jpg', // Placeholder image; replace if you have a screenshot
+  image: '/assets/chat-based.jpg', // Placeholder image; replace if you have a screenshot
   tech: ['HTML5', 'CSS3', 'JavaScript', 'SVG'],
   github: 'https://github.com/KaviyaSathasivam/PortfolioViaWhatsapp', // Replace "yourusername" if needed
   live: 'https://kaviya-portfolio-via-whatsapp.vercel.app/', // Add once deployed (GitHub Pages / Netlify / Vercel)
@@ -30,7 +30,7 @@ const Projects: React.FC = () => {
 {
   title: 'SwasthTrack – Patient Health Tracking System',
   description: 'A modern health management system featuring role-based login for patients, doctors, and admins. Built with React, TypeScript, and Tailwind CSS, it includes interactive dashboards, health data visualizations, and a scalable frontend architecture.',
-  image: './assets/swasth.jpg', // Replace with your actual screenshot if available
+  image: '/assets/swasth.jpg', // Replace with your actual screenshot if available
   tech: ['React', 'TypeScript', 'Tailwind CSS', 'Recharts', 'Framer Motion', 'Vite'],
   github: 'https://github.com/KaviyaSathasivam/SwasthTrack_HealthTrackingSystem',
   live: '', // Not deployed
@@ -39,7 +39,7 @@ const Projects: React.FC = () => {
 {
   title: 'Egg Catcher Deluxe',
   description: 'A fun desktop arcade game built using Python and Tkinter where you catch colorful falling eggs and power-ups with a basket. Features include scoring, lives, level progression, and exciting power-up mechanics.',
-  image: './assets/egg catch.png', // Placeholder; replace with actual game screenshot if available
+  image: '/assets/egg catch.png', // Placeholder; replace with actual game screenshot if available
   tech: ['Python', 'Tkinter', 'Standard Library'],
   github: 'https://github.com/KaviyaSathasivam/Game_CatchingEggg',
   live: '', // Not applicable for desktop apps unless you host a demo video or executable
@@ -49,7 +49,7 @@ const Projects: React.FC = () => {
   title: 'Rubik\'s Cube GUI Solver (Hackathon Edition)',
   description:
     'A Python-based interactive 2D GUI to scramble and solve a 3x3 Rubik’s Cube. Includes manual scrambling, auto-solving (kociemba or fallback), animated moves, screenshots, JSON export, and timer — built for hackathon challenges and educational demos.',
-  image: './assets/cubee.png', // Replace with actual screenshot path
+  image: '/assets/cubee.png', // Replace with actual screenshot path
   tech: ['Python', 'Tkinter', 'NumPy', 'PyAutoGUI', 'kociemba'],
   github: 'https://github.com/KaviyaSathasivam/Rubiks_Cube_Solver',
   live: '', // No live link for desktop app, leave empty
@@ -59,7 +59,7 @@ const Projects: React.FC = () => {
 {
   title: 'AI Chatbot – Gemini + FastAPI',
   description: 'A lightweight AI chatbot using Google Gemini 1.5 Flash, FastAPI backend, and a minimal HTML/CSS/JS frontend. It supports real-time intelligent conversations with a simple UI and CORS-enabled backend for integration.',
-  image: './assets/AI Chatbot.png', // Replace with actual UI screenshot if available
+  image: '/assets/AI Chatbot.png', // Replace with actual UI screenshot if available
   tech: ['Google Gemini', 'FastAPI', 'HTML', 'CSS', 'JavaScript'],
   github: 'https://github.com/KaviyaSathasivam/GenAI_Chatbot',
   live: '', // Not deployed
@@ -68,7 +68,7 @@ const Projects: React.FC = () => {
 {
   title: 'Gemini TerminalBot – AI Chat in CLI',
   description: 'A terminal-based chatbot powered by Google Gemini 1.5 Flash. Simulates real-time chat with typing effects, timestamps, and graceful exit commands. Lightweight and clean Python project for command-line AI interaction.',
-  image: './assets/Gemini TerminalBot.png', // Terminal-themed placeholder — replace with your own if desired
+  image: '/assets/Gemini TerminalBot.png', // Terminal-themed placeholder — replace with your own if desired
   tech: ['Python', 'Google Gemini', 'CLI', 'Standard Library'],
   github: 'https://github.com/KaviyaSathasivam/Gemini_TerminalBot',
   live: '', // Not deployed
@@ -77,7 +77,7 @@ const Projects: React.FC = () => {
 {
   title: 'GenPlay Arcade – AI-Powered Learning Games',
   description: 'An educational platform that blends learning and play using Streamlit, Gemini API, and MySQL. Features include a Snake Game that teaches spelling, a ChatPDF bot, structured learning modules, and a high-score dashboard — all built for engaging AI-assisted education.',
-  image: './assets/arcade.png', // Replace with actual screenshot if available
+  image: '/assets/arcade.png', // Replace with actual screenshot if available
   tech: ['Python', 'Streamlit', 'Gemini API', 'MySQL'],
   github: 'https://github.com/KaviyaSathasivam/GenPlayArcadeGame',
   live: 'https://drive.google.com/drive/folders/1XTZZiiMS8Hzdnrsu23SsKP44NNAa6CSZ', // Not deployed
@@ -127,13 +127,12 @@ const Projects: React.FC = () => {
                 rotateY: 5,
                 rotateX: 5,
               }}
-              className={`group relative bg-white/80 dark:bg-gray-800/80  rounded-3xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-500 transform-gpu perspective-1000 ${
-                project.featured ? 'md:col-span-2 lg:col-span-1 ring-2 ring-blue-200 dark:ring-blue-800' : ''
-              }`}
-              className={`group relative bg-gradient-to-br from-white/90 to-white/70 
- dark:from-gray-900 dark:to-gray-800
-  rounded-3xl overflow-hidden shadow-xl hover:shadow-2xl 
-  transition-all duration-500 transform-gpu perspective-1000`}
+               className={`group relative 
+    bg-gradient-to-br from-white/90 to-white/70 
+    dark:from-gray-900 dark:to-gray-800
+    rounded-3xl overflow-hidden shadow-xl hover:shadow-2xl 
+    transition-all duration-500 transform-gpu perspective-1000
+    ${project.featured ? 'md:col-span-2 lg:col-span-1 ring-2 ring-blue-200 dark:ring-blue-800' : ''}`}
             >
               {/* Gradient Background on Hover */}
 {/* Gradient Background on Hover */}

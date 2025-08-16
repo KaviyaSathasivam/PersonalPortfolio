@@ -18,7 +18,7 @@ const Achievements: React.FC = () => {
     {
       title: 'NPTEL Topper 2% in Cloud Computing',
       description: 'Achieved top 2% rank in NPTEL Cloud Computing course by IIT Kharagpur, mastering concepts like virtualization, IaaS, PaaS, SaaS, load balancing, cloud storage, and security, demonstrating strong technical skills and commitment to scalable, industry-relevant cloud technologies.',
-      image: './assets/toppernptel.png',
+      image: '/assets/toppernptel.png',
       date: '2025',
       category: 'Academic',
       link: 'https://www.linkedin.com/posts/kaviya-s-90b6a6257_nptel-nptelcourses-elitecertificate-activity-7362113912319758336-63G_?utm_source=share&utm_medium=member_desktop&rcm=ACoAAD9Iz5sBE6J2ZA_aUATG5y4rXjNvToDlAlo',
@@ -27,7 +27,7 @@ const Achievements: React.FC = () => {
     {
       title: 'UGC NEP SAARTHI – Student Ambassador for Academic Reforms',
       description: 'Selected as a UGC NEP SAARTHI by the University Grants Commission to promote NEP 2020 through interdisciplinary learning, student-centric reforms, and holistic education, serving as a student ambassador driving change in higher education.',
-      image: './assets/nep.png',
+      image: '/assets/nep.png',
       date: '2025',
       category: 'Academic',
       link: 'https://www.linkedin.com/posts/kaviya-s-90b6a6257_nepsaarthi-ugcindia-nep2020-activity-7348722950545514497-s95e?utm_source=share&utm_medium=member_desktop&rcm=ACoAAD9Iz5sBE6J2ZA_aUATG5y4rXjNvToDlAlo',
@@ -36,7 +36,7 @@ const Achievements: React.FC = () => {
     {
       title: 'NPTEL Discipline star and Motivated Learner ',
       description: 'Awarded the NPTEL Discipline Star and recognized as a Motivated Learner for the Jan–April 2025 session by completing 8 NPTEL courses in the same discipline with consistent performance. These accolades reflect my dedication to continuous learning, deep subject expertise, and commitment to academic excellence through self-paced, goal-driven efforts.',
-      image: './assets/nptel.jpg',
+      image: '/assets/nptel.jpg',
       date: '2025',
       category: 'Academic',
       icon: <Award size={24} />,
@@ -44,7 +44,7 @@ const Achievements: React.FC = () => {
     {
       title: 'Paper Publication',
       description: 'Authored paper on "Secure Vote Revolutionising Democracy through Blockchain Technology" published in  2025 International Conference on Computing and Communication Technologies (ICCCT).',
-      image: './assets/paper.png',
+      image: '/assets/paper.png',
       date: '2025',
       category: 'Research',
       link: 'https://ieeexplore.ieee.org/document/11018954',
@@ -53,7 +53,7 @@ const Achievements: React.FC = () => {
     {
       title: 'Innovathon 3.0 Finalist',
       description: 'I’m thrilled to share that our project, “Secure Vote: Revolutionizing Democracy through Blockchain Technology”, was selected under Goal 16: Peace,Justice and Strong Institutions (SDG) at Innovathon 3.0.',
-      image: './assets/innovathon.jpg',
+      image: '/assets/innovathon.jpg',
       date: '2025',
       category: 'Competition',
       link: 'https://www.linkedin.com/posts/kaviya-s-90b6a6257_solveathon3-sdg10-reducedinequality-activity-7283800659437461504-5g5s?utm_source=share&utm_medium=member_desktop&rcm=ACoAAD9Iz5sBE6J2ZA_aUATG5y4rXjNvToDlAlo',
@@ -62,7 +62,7 @@ const Achievements: React.FC = () => {
     {
       title: 'Best Student Volunteer of the NDLI Club',
       description: 'Recognized as the Best Student Volunteer of the NDLI Club for actively coordinating and leading multiple knowledge-based events such as INQUESTA 1.0, NDLI awareness programs, and National Library Week celebrations.',
-      image: './assets/ndli club.jpg',
+      image: '/assets/ndli-club.jpg',
       date: '2025',
       category: 'Academic',
       link: 'https://www.linkedin.com/posts/kaviya-s-90b6a6257_bestvolunteer-ndliclub-sairaminstitutions-activity-7350108708233760768-t1qA?utm_source=share&utm_medium=member_desktop&rcm=ACoAAD9Iz5sBE6J2ZA_aUATG5y4rXjNvToDlAlo',
@@ -71,7 +71,7 @@ const Achievements: React.FC = () => {
     {
   title: 'Coordinator – BIS Club at Benchmark Confluence 3.0',
   description: 'Served as Coordinator for the BIS Club at Benchmark Confluence 3.0, organized in collaboration with CODE CLUB, Department of CSE. Led the planning and execution of engaging activities including a Technical Quiz, a Presentation on Standards, a Crossword, and Writing Standards for IoT Devices.',
-  image: './assets/bench.png',
+  image: '/assets/bench.png',
   date: '2025',
   category: 'Academic',
   link: 'https://www.linkedin.com/posts/kaviya-s-90b6a6257_bisclub-benchmarkconfluence-standards-activity-7361774569302478848-hjBf?utm_source=share&utm_medium=member_desktop&rcm=ACoAAD9Iz5sBE6J2ZA_aUATG5y4rXjNvToDlAlo',
@@ -81,7 +81,7 @@ const Achievements: React.FC = () => {
     {
       title: 'Coordinator – INQUESTA 1.0 | NDLI Club Symposium',
       description: 'Coordinated Day 5 of INQUESTA 1.0, a national-level symposium organized by the NDLI Club with a Harry Potter theme, overseeing event flow, designing creative rounds, and contributing to the successful execution of the Wizarding Quest and Valedictory Ceremony.',
-      image: './assets/inquesta.jpg',
+      image: '/assets/inquesta.jpg',
       date: '2025',
       category: 'Academic',
       link: 'https://www.linkedin.com/posts/kaviya-s-90b6a6257_inquesta-ndli-srisairamengineeringcollege-activity-7349813096598622209-wS6q?utm_source=share&utm_medium=member_desktop&rcm=ACoAAD9Iz5sBE6J2ZA_aUATG5y4rXjNvToDlAlo',
@@ -90,7 +90,7 @@ const Achievements: React.FC = () => {
     {
       title: 'Solveathon 3.0 Finalist',
       description: 'I’m thrilled to share that our project, “Secure Vote: Revolutionizing Democracy through Blockchain Technology”, was selected under Goal 10: Reduced Inequality (SDG) at Solveathon 3.0.',
-      image: './assets/solveathon.png',
+      image: '/assets/solveathon.png',
       date: '2024',
       category: 'Competition',
       link: 'https://www.linkedin.com/posts/kaviya-s-90b6a6257_solveathon3-sdg10-reducedinequality-activity-7283800659437461504-5g5s?utm_source=share&utm_medium=member_desktop&rcm=ACoAAD9Iz5sBE6J2ZA_aUATG5y4rXjNvToDlAlo',
@@ -99,7 +99,7 @@ const Achievements: React.FC = () => {
     {
       title: 'Event Volunteer – Synsara 2K24, CSE Symposium',
       description: 'Volunteered Synsara 2K24, the annual symposium of the CSE Department, managing event planning, team coordination, and smooth execution. Played a key role in ensuring engaging sessions, participant involvement, and a successful technical celebration for students and attendees.',
-      image: './assets/synsara.jpg',
+      image: '/assets/synsara.jpg',
       date: '2025',
       category: 'Academic',
       link:'https://www.linkedin.com/posts/kaviya-s-90b6a6257_synsara2k24-eventcoordinator-csedept-activity-7348629218999664641-RT63?utm_source=share&utm_medium=member_desktop&rcm=ACoAAD9Iz5sBE6J2ZA_aUATG5y4rXjNvToDlAlo',
@@ -109,7 +109,7 @@ const Achievements: React.FC = () => {
     {
       title: 'Discus Throw Second Runner-up',
       description: 'I won third place in the Discus Throw event during the Sports Day 2024 showcasing strength, focus, and competitive spirit through consistent training and athletic performance.',
-      image: './assets/discuss.jpg',
+      image: '/assets/discuss.jpg',
       date: '2024',
       category: 'Sports',
       link: 'https://www.linkedin.com/posts/kaviya-s-90b6a6257_sportsday-discusthrow-thirdplace-activity-7283793519092080640-GKRB?utm_source=share&utm_medium=member_desktop&rcm=ACoAAD9Iz5sBE6J2ZA_aUATG5y4rXjNvToDlAlo',
@@ -118,7 +118,7 @@ const Achievements: React.FC = () => {
     {
       title: 'Sairam SDG Ideathon 3.0 WINNER  Under Goal 5: Gender Equality',
       description: 'Our project focused on addressing the critical need for better women’s health management, particularly for those dealing with PCOD/PCOS. The application was designed to empower women by providing effective tools to track their health and make informed decisions for their well-being.',
-      image: './assets/ideathon.png',
+      image: '/assets/ideathon.png',
       date: '2023',
       category: 'Competition',
       link: 'https://www.linkedin.com/posts/kaviya-s-90b6a6257_teamwork-innovation-womenempowerment-activity-7271900508565467137-JAnc?utm_source=share&utm_medium=member_desktop&rcm=ACoAAD9Iz5sBE6J2ZA_aUATG5y4rXjNvToDlAlo',
@@ -127,7 +127,7 @@ const Achievements: React.FC = () => {
     {
       title: 'Sairam SDG Ideathon 3.0 WINNER  Under Goal 11: Sustainable Cities and Communities.',
       description: 'This project addresses the critical issue of food waste and its impact on urban sustainability. Through innovative solutions, we aimed to provide a second life to excess food, ensuring it benefits those in need while contributing to the environment and community well-being.',
-      image: './assets/ideath.png',
+      image: '/assets/ideath.png',
       date: '2023',
       category: 'Competition',
       link: 'https://www.linkedin.com/posts/kaviya-s-90b6a6257_teamwork-innovation-sustainability-activity-7271903856265994241-m9gK?utm_source=share&utm_medium=member_desktop&rcm=ACoAAD9Iz5sBE6J2ZA_aUATG5y4rXjNvToDlAlo',
@@ -136,7 +136,7 @@ const Achievements: React.FC = () => {
     {
       title: 'Quiz Winner – Convergence Symposium',
       description: 'We secured First Prize in the Quiz Category awarded by Cash prize at Convergence 2023 22nd State Level Symposium, organized by the Department of Humanities & Sciences, Sri Sairam Engineering College.',
-      image: './assets/convergence.png',
+      image: '/assets/convergence.png',
       date: '2023',
       category: 'Competition',
       link: 'https://www.linkedin.com/posts/kaviya-s-90b6a6257_teamworkwins-convergence2023-quizwinners-activity-7272962928360792064-I-gp?utm_source=share&utm_medium=member_desktop&rcm=ACoAAD9Iz5sBE6J2ZA_aUATG5y4rXjNvToDlAlo',
@@ -147,7 +147,7 @@ const Achievements: React.FC = () => {
     {
       title: 'Maths Club Quiz -IInd Runner-Up',
       description: 'I participated in Ramanujan Quiz organized by the Mathematics Club. irst place winner for developing a sustainable energy monitoring app that helps users reduce their carbon footprint by 30%.',
-      image: './assets/maths.png',
+      image: '/assets/maths.png',
       date: '2023',
       category: 'Competition',
       link: 'https://www.linkedin.com/posts/kaviya-s-90b6a6257_ramanujan-srinivasaramanujan-mathsclub-activity-7282642612258271232-IokT?utm_source=share&utm_medium=member_desktop&rcm=ACoAAD9Iz5sBE6J2ZA_aUATG5y4rXjNvToDlAlo',
@@ -157,7 +157,7 @@ const Achievements: React.FC = () => {
     {
       title: 'RJ & Content Creator – NSS Sairam RJ Family',
       description: 'Served as an RJ and content creator for NSS Sairam, hosting engaging audio and video podcasts on topics like education, festivals, and family. Strengthened storytelling, communication, and community connection while spreading joy, positivity, and heartfelt messages through every episode.',
-      image: './assets/Nss.jpg',
+      image: '/assets/Nss.jpg',
       date: '2023-2024',
       category: 'Academic',
       link: 'https://www.linkedin.com/posts/kaviya-s-90b6a6257_sec-linkedin-sairaminstitutions-activity-7289990380970725376-7wsw?utm_source=share&utm_medium=member_desktop&rcm=ACoAAD9Iz5sBE6J2ZA_aUATG5y4rXjNvToDlAlo',
@@ -215,7 +215,7 @@ const Achievements: React.FC = () => {
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           <AnimatePresence>
-          {visibleAchievements.map((achievement, index) => (
+          {visibleAchievements.map((achievement) => (
             <motion.div
               key={achievement.title}
               initial={{ opacity: 0, y: 30 }}
@@ -332,7 +332,7 @@ const Achievements: React.FC = () => {
             { number: '5+', label: 'Awards won', color: 'from-green-500 to-emerald-500' },
             { number: '8+', label: 'Projects', color: 'from-purple-500 to-pink-500' },
             { number: '9.66', label: 'CGPA', color: 'from-orange-500 to-red-500' },
-          ].map((stat, index) => (
+          ].map((stat) => (
             <motion.div
               key={stat.label}
               initial={{ opacity: 0, scale: 0.8 }}

@@ -1,7 +1,7 @@
 import React from 'react';
 import { useState } from "react";
 import { motion } from 'framer-motion';
-import { Award, ExternalLink, Calendar, CheckCircle, Zap } from 'lucide-react';
+import { ExternalLink, Calendar, CheckCircle, Zap } from 'lucide-react';
 
 interface Certification {
   name: string;
@@ -18,14 +18,14 @@ interface Certification {
 
 const Certifications: React.FC = () => {
   const [showAll, setShowAll] = useState(false);
-  const [expandedIndex, setExpandedIndex] = useState(null);
-  const [expandedSkillsIndex, setExpandedSkillsIndex] = useState(null); // For skills
+  const [expandedIndex, setExpandedIndex] = useState<number | null>(null);
+  const [expandedSkillsIndex, setExpandedSkillsIndex] = useState<number | null>(null); // For skills
   const certifications: Certification[] = [
     {
   name: 'NPTEL Discipline Star & Motivated Learner',
   issuer: 'NPTEL (IITs & IISc)',
   date: '2023 – 2025',
-  image: './assets/discipline.jpg', // Thumbnail: Discipline Star & Motivated Learner badge image
+  image: '/assets/discipline.jpg', // Thumbnail: Discipline Star & Motivated Learner badge image
   description: 'Recognized as an NPTEL Discipline Star & Motivated Learner for consistent academic excellence across multiple courses from 2023–2025. Achieved Top 2% performance in "Cloud Computing" and completed advanced certifications in emerging technologies and core computing skills.',
   skills: [
   'Blockchain and its Applications',
@@ -44,7 +44,7 @@ const Certifications: React.FC = () => {
   "issuer": "Udemy (Instructor: Vijay Kumar)",
   "date": "August 4, 2025",
   "credentialId": "UC-82971d25-71a3-40dd-a6cc-0746aeac08ed",
-  "image": "./assets/jshtml.png",
+  "image": "/assets/jshtml.png",
   "description": "Successfully completed the 'Master JavaScript, HTML, and CSS with 30 Projects in 30 Days' course on Udemy, building 30 real-world projects to strengthen front-end development skills and gain hands-on experience with core web technologies.",
   "skills": ["JavaScript", "HTML5", "CSS3", "Responsive Web Design", "Front-End Development", "Web Project Implementation"],
   "verifyLink": "https://ude.my/UC-82971d25-71a3-40dd-a6cc-0746aeac08ed",
@@ -55,7 +55,7 @@ const Certifications: React.FC = () => {
   "issuer": "MongoDB, Inc.",
   "date": "August 2025",
   "credentialId": "MDBz6q2p4bqcx",
-  "image": "./assets/mongo.png",
+  "image": "/assets/mongo.png",
   "description": "Successfully completed the 'Schema Patterns and Antipatterns' course by MongoDB, gaining expertise in designing optimal database schemas and avoiding common pitfalls.",
   "skills": ["Database Schema Design", "MongoDB Best Practices", "Schema Patterns", "Schema Antipatterns"],
   "verifyLink": "https://ti-user-certificates.s3.amazonaws.com/ae62dcd7-abdc-4e90-a570-83eccba49043/911b976a-bc5d-4fa6-9107-ff1161de6efb-kaviya-s-3aff89ab-6b0f-4f60-bcfb-e57b0f31c79c-certificate.pdf",
@@ -65,7 +65,7 @@ const Certifications: React.FC = () => {
   name: 'Managed Services Launchpad Program - Cloud',
   issuer: 'PwC India',
   date: 'July 24, 2025',
-  image: './assets/pwc.png',
+  image: '/assets/pwc.png',
   description: 'Successfully completed the PwC Managed Services Launchpad Program (Cloud), gaining insights and skills in cloud service management, client solutions, and operational excellence.',
   skills: [
   'RDBMS','IT Fundamentals',
@@ -83,7 +83,7 @@ const Certifications: React.FC = () => {
   "issuer": "Udemy (Instructor: Zechariah Tech)",
   "date": "July 27, 2025",
   "credentialId": "UC-15a2e7a4-14d2-4490-aefc-93c28f641b0f",
-  "image": "./assets/block.png",
+  "image": "/assets/block.png",
   "description": "Successfully completed the 'Learn Blockchain and Crypto from Beginning' course on Udemy, gaining foundational knowledge of blockchain technology, cryptocurrency concepts, decentralized networks, and digital assets.",
   "skills": ["Blockchain Technology", "Cryptocurrency Basics", "Decentralization", "Digital Assets", "Distributed Ledger"],
   "verifyLink": "https://ude.my/UC-15a2e7a4-14d2-4490-aefc-93c28f641b0f",
@@ -95,7 +95,7 @@ const Certifications: React.FC = () => {
   name: 'Software Engineering Job Simulation',
   issuer: 'Accenture (via Forage)',
   date: 'July 3, 2025',
-  image: './assets/forage.png',
+  image: '/assets/forage.png',
   description: 'Completed a virtual job simulation program focusing on software engineering practices, gaining practical experience in multiple technical areas.',
   skills: [
     'Agile',
@@ -117,7 +117,7 @@ const Certifications: React.FC = () => {
   issuer: 'Cisco Networking Academy',
   date: '07 May 2025',
   credentialId: '06522cfa-34c5-4bf8-b052-8207f08d105b', // replace with actual credential ID if available
-  image: './assets/modernai.png',
+  image: '/assets/modernai.png',
   description: 'Completed the Cisco Networking Academy "Introduction to Modern AI" course, gaining foundational knowledge of Artificial Intelligence concepts, applications, and ethical considerations.',
   skills: ['Artificial Intelligence', 'Machine Learning Basics', 'AI Applications', 'Data-Driven Decision Making', 'Ethical AI'],
   verifyLink: 'https://www.credly.com/badges/06522cfa-34c5-4bf8-b052-8207f08d105b/public_url', // replace with your actual verification link
@@ -128,7 +128,7 @@ const Certifications: React.FC = () => {
   issuer: 'GUVI | HCL',
   date: 'April 3 2025',
   credentialId: '76X0nz1l46v643y38h',
-  image: './assets/genaii.png',
+  image: '/assets/genaii.png',
   description: 'Successfully completed the "Sairam - Generative AI - English" course offered by GUVI in collaboration with HCL, gaining knowledge in generative AI concepts, tools, and applications.',
   skills: ['Generative AI', 'AI Tools', 'Prompt Engineering', 'AI Applications', 'Machine Learning Basics'],
   verifyLink: 'https://www.guvi.in/share-certificate/76X0nz1146v643y38h',
@@ -139,7 +139,7 @@ const Certifications: React.FC = () => {
   issuer: 'Cisco Networking Academy',
   date: '2025',
   credentialId: '973cc675-2e57-45f5-8ff2-e50de81f50af', // replace with actual credential ID
-  image: './assets/ccna.png',
+  image: '/assets/ccna.png',
   description: 'Covered advanced networking, cybersecurity, IoT, Python, and data analytics concepts.',
   skills: ['Networking', 'Cybersecurity', 'IoT', 'Python', 'Data Analytics', 'Problem Solving'],
   verifyLink: 'https://drive.google.com/drive/folders/1Iec74hiB1-GbH-bouBRlijs4ZqWRvEii?usp=sharing', // replace with actual verification link
@@ -150,7 +150,7 @@ const Certifications: React.FC = () => {
   "issuer": "GUVI | HCLTech",
   "date": "October 2024",
   "credentialId": "178Rv182d74Zz307gO",
-  "image": "./assets/sawit.png",
+  "image": "/assets/sawit.png",
   "description": "Successfully completed the SAWIT.AI Learnathon Program held on 21st September, covering the fundamentals of Generative AI, supported by Women Techmakers and HCLTech.",
   "skills": ["Generative AI Fundamentals", "AI Concepts", "Machine Learning Basics", "Innovation in AI"],
   "verifyLink": "https://www.guvi.in/share-certificate/178Rv182d74Zz307gO",
@@ -161,7 +161,7 @@ const Certifications: React.FC = () => {
   "issuer": "REVAMP Academy",
   "date": "September 2024",
   "credentialId": '',
-  "image": "./assets/mern.png",
+  "image": "/assets/mern.png",
   "description": "Successfully completed a 4-month training program (10/06/2024 - 25/09/2024) on MERN Fullstack Development at REVAMP Academy, showcasing exceptional dedication, punctuality, and responsiveness throughout the course.",
   "skills": ["MongoDB", "Express.js", "React.js", "Node.js", "Fullstack Development", "Web Application Development"],
   "verifyLink": 'https://drive.google.com/file/d/16Qq974B2z7slJUdXwH0hna1YEQ58v31n/view?usp=sharing',
@@ -175,7 +175,7 @@ const Certifications: React.FC = () => {
   issuer: 'IEEE',
   date: 'October 2024',
   credentialId: 'okzAB3NirZdSr6',
-  image: './assets/xtreme.png',
+  image: '/assets/xtreme.png',
   description: 'Served as the Team Leader of UpsideDown in the IEEE Xtreme 18.0 Programming Competition, competing among over 19,000 participants worldwide and showcasing expertise in leadership, competitive programming, and problem-solving.',
   skills: ['Competitive Programming', 'Problem Solving', 'Algorithm Design', 'Team Collaboration', 'Time Management'],
   verifyLink: 'https://certificate.ieeextreme.org/generate-email-certificate/okzAB3NirZdSr6',
@@ -186,7 +186,7 @@ const Certifications: React.FC = () => {
   "issuer": "ICT Academy",
   "date": "October 2024",
   "credentialId": "b8af5132-473b-4af7-b907-5bb42e6dc765",
-  "image": "./assets/l2024.png",
+  "image": "/assets/l2024.png",
   "description": "Successfully completed 8 courses in Learnathon 2024, organized by ICT Academy from August to October 2024, in collaboration with global technology partners.",
   "skills": ["Technology Fundamentals", "Cloud Computing", "Data Analytics", "AI & Machine Learning", "Programming", "Industry Tools"],
   "verifyLink": "https://www.credly.com/badges/b8af5132-473b-4af7-b907-5bb42e6dc765/public_url",
@@ -197,7 +197,7 @@ const Certifications: React.FC = () => {
   issuer: 'Cisco Networking Academy',
   date: '16 Apr 2024',
   credentialId: '8a029590-fad9-407d-a826-8b44949fc4a4', // replace with actual credential ID if available
-  image: './assets/ds.png',
+  image: '/assets/ds.png',
   description: 'Completed the Cisco Networking Academy "Introduction to Data Science" course, covering data analysis, visualization, and data-driven decision-making concepts.',
   skills: ['Data Science', 'Data Analysis', 'Data Visualization', 'Problem Solving', 'Analytics'],
   verifyLink: 'https://www.credly.com/badges/8a029590-fad9-407d-a826-8b44949fc4a4/public_url', // replace with your actual verification link
@@ -208,7 +208,7 @@ const Certifications: React.FC = () => {
   issuer: 'Great Learning Academy',
   date: 'May 2024',
   credentialId: 'PAEATDEU',
-  image: './assets/blockchaa.png',
+  image: '/assets/blockchaa.png',
   description: 'Successfully completed the free online course "Blockchain Process" offered by Great Learning Academy, gaining foundational knowledge of blockchain technology, processes, and its applications.',
   skills: ['Blockchain Fundamentals', 'Distributed Ledger Technology', 'Consensus Mechanisms', 'Smart Contracts', 'Blockchain Applications'],
   verifyLink: 'https://www.mygreatlearning.com/certificate/PAEATDEU',
@@ -220,7 +220,7 @@ const Certifications: React.FC = () => {
   issuer: 'Global Emerging Leadership Programs',
   date: '2023',
   credentialId: '',
-  image: './assets/gelp.png',
+  image: '/assets/gelp.png',
   description: 'Completed the 2023 Global Summit for Career & Skill Development, demonstrating skill-based learning in Local Knowledge in a Global Context, Capacity to Engage in Respectful Relationships, Technological Literacies, Critical Thinking, Active Learning, and Indigenous Perspectives.',
   skills: ['Local Knowledge in a Global Context', 'Capacity to Engage in Respectful Relationships', 'Technological Literacies', 'Critical Thinking', 'Active Learning', 'Indigenous Perspectives'],
   verifyLink: 'https://app.gelp.ca/badge?id=I5PQ2CSIB8JSG1BT',
@@ -232,7 +232,7 @@ const Certifications: React.FC = () => {
   "issuer": "Spoken Tutorial Project, IIT Bombay",
   "date": "December 18, 2023",
   "credentialId": "33987120V2",
-  "image": "./assets/cppp.png",
+  "image": "/assets/cppp.png",
   "description": "Successfully completed the Advanced C++ training test organized at Sri Sairam Engineering College by A. Sheela Jeyakumar, with course material provided by the Spoken Tutorial Project, IIT Bombay. Achieved a perfect score of 100% in the online examination conducted remotely by IIT Bombay.",
   "skills": ["C++ Programming", "Advanced C++ Concepts", "Object-Oriented Programming", "Problem Solving", "Software Development"],
   "verifyLink": "https://drive.google.com/file/d/1vMTC1MWeqJAtP8C1_mw33te_W22RWi8G/view?usp=sharing",
@@ -243,7 +243,7 @@ const Certifications: React.FC = () => {
   "issuer": "REVAMP Academy",
   "date": "December 2023",
   "credentialId": '',
-  "image": "./assets/android.png",
+  "image": "/assets/android.png",
   "description": "Successfully completed a 5-week training program (15/11/2023 - 25/12/2023) on Fullstack Android App Development at REVAMP Academy, demonstrating strong technical skills, punctuality, and dedication throughout the training.",
   "skills": ["Android Development", "Fullstack Development", "Java", "Kotlin", "Mobile App Architecture"],
   "verifyLink": 'https://drive.google.com/file/d/1YdStE1SWkObx_QEKBYbx21wD905UyHa_/view?usp=sharing',
@@ -256,7 +256,7 @@ const Certifications: React.FC = () => {
   "issuer": "Oracle Academy",
   "date": "January 2024",
   "credentialId": '',
-  "image": "./assets/oacle.png",
+  "image": "/assets/oacle.png",
   "description": "Successfully completed the final exam for the Java Fundamentals course offered by Oracle Academy, demonstrating foundational skills in Java programming.",
   "skills": ["Java Programming", "Object-Oriented Programming", "Java Syntax", "Core Java Concepts"],
   "verifyLink": 'https://drive.google.com/file/d/1Mxf4l3GsG7DRBy1ABzNdbZOWcObqGQcg/view?usp=sharing',
@@ -267,7 +267,7 @@ const Certifications: React.FC = () => {
   "issuer": "LinkedIn Learning",
   "date": "April 2023",
   "credentialId": "56bd1defea01dedb967d554df05ca5195d3d53a8a4fcf46b46850fdee6ec8c3d",
-  "image": "./assets/linkedin.png",
+  "image": "/assets/linkedin.png",
   "description": "Completed the 'Python Object-Oriented Programming (2020)' course on LinkedIn Learning, covering key concepts of Python programming and Object-Oriented Programming (OOP) principles.",
   "skills": ["Python (Programming Language)", "Object-Oriented Programming (OOP)"],
   "verifyLink": "https://www.linkedin.com/learning/certificates/56bd1defea01dedb967d554df05ca5195d3d53a8a4fcf46b46850fdee6ec8c3d?trk=share_certificate",
@@ -279,7 +279,7 @@ const Certifications: React.FC = () => {
   "issuer": "ICT Academy",
   "date": "September 2023",
   "credentialId": "0018b88a-4015-4f22-9e73-b4410afad7fb",
-  "image": "./assets/l2023.png",
+  "image": "/assets/l2023.png",
   "description": "Successfully participated in Learnathon 2023, organized by ICT Academy during August to September 2023, in collaboration with global technology partners.",
   "skills": ["Technology Fundamentals", "Cloud Computing", "Data Analytics", "AI & Machine Learning", "Programming", "Industry Tools"],
   "verifyLink": "https://www.credly.com/badges/0018b88a-4015-4f22-9e73-b4410afad7fb/public_url",
@@ -408,7 +408,7 @@ const Certifications: React.FC = () => {
                 )}
 
                 <div className="flex flex-wrap gap-1 mb-4">
-  {(expandedSkillsIndex === index ? cert.skills : cert.skills.slice(0, 4)).map((skill, skillIndex) => (
+  {(expandedSkillsIndex === index ? cert.skills : cert.skills.slice(0, 4)).map((skill) => (
     <motion.span
       key={skill}
       initial={{ opacity: 0, scale: 0 }}
@@ -501,7 +501,7 @@ const Certifications: React.FC = () => {
             { number: '5+', label: 'Tech Domains', color: 'from-blue-500 to-cyan-500' },
             { number: '100%', label: 'Verified', color: 'from-green-500 to-emerald-500' },
             { number: '2025', label: 'Latest Cert', color: 'from-purple-500 to-pink-500' },
-          ].map((stat, index) => (
+          ].map((stat) => (
             <motion.div
               key={stat.label}
               initial={{ opacity: 0, scale: 0.8 }}

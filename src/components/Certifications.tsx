@@ -36,31 +36,10 @@ const Certifications: React.FC = () => {
 ],
   credentialId: 'NPTELSS1250103303 & NPTELSS1250107535',
   verifyLink: 'https://drive.google.com/drive/folders/1mD13VhWg6BUDIb_vqxcCGE6H3gtKkf6w?usp=sharing', // Google Drive link with all NPTEL certs
-  color: 'from-yellow-500 to-orange-400',
+  color: 'from-blue-500 to-indigo-500',
   featured: false
 },
-{
-  "name": "Master JavaScript, HTML, and CSS with 30 Projects in 30 Days",
-  "issuer": "Udemy (Instructor: Vijay Kumar)",
-  "date": "August 4, 2025",
-  "credentialId": "UC-82971d25-71a3-40dd-a6cc-0746aeac08ed",
-  "image": "/assets/jshtml.png",
-  "description": "Successfully completed the 'Master JavaScript, HTML, and CSS with 30 Projects in 30 Days' course on Udemy, building 30 real-world projects to strengthen front-end development skills and gain hands-on experience with core web technologies.",
-  "skills": ["JavaScript", "HTML5", "CSS3", "Responsive Web Design", "Front-End Development", "Web Project Implementation"],
-  "verifyLink": "https://ude.my/UC-82971d25-71a3-40dd-a6cc-0746aeac08ed",
-  "color": "from-purple-500 to-pink-600"
-},
-{
-  "name": "Schema Patterns and Antipatterns",
-  "issuer": "MongoDB, Inc.",
-  "date": "August 2025",
-  "credentialId": "MDBz6q2p4bqcx",
-  "image": "/assets/mongo.png",
-  "description": "Successfully completed the 'Schema Patterns and Antipatterns' course by MongoDB, gaining expertise in designing optimal database schemas and avoiding common pitfalls.",
-  "skills": ["Database Schema Design", "MongoDB Best Practices", "Schema Patterns", "Schema Antipatterns"],
-  "verifyLink": "https://ti-user-certificates.s3.amazonaws.com/ae62dcd7-abdc-4e90-a570-83eccba49043/911b976a-bc5d-4fa6-9107-ff1161de6efb-kaviya-s-3aff89ab-6b0f-4f60-bcfb-e57b0f31c79c-certificate.pdf",
-  "color": "from-green-600 to-emerald-500"
-},
+
 {
   name: 'Managed Services Launchpad Program - Cloud',
   issuer: 'PwC India',
@@ -79,19 +58,6 @@ const Certifications: React.FC = () => {
   featured: false
 },
 {
-  "name": "Learn Blockchain and Crypto from Beginning",
-  "issuer": "Udemy (Instructor: Zechariah Tech)",
-  "date": "July 27, 2025",
-  "credentialId": "UC-15a2e7a4-14d2-4490-aefc-93c28f641b0f",
-  "image": "/assets/block.png",
-  "description": "Successfully completed the 'Learn Blockchain and Crypto from Beginning' course on Udemy, gaining foundational knowledge of blockchain technology, cryptocurrency concepts, decentralized networks, and digital assets.",
-  "skills": ["Blockchain Technology", "Cryptocurrency Basics", "Decentralization", "Digital Assets", "Distributed Ledger"],
-  "verifyLink": "https://ude.my/UC-15a2e7a4-14d2-4490-aefc-93c28f641b0f",
-  "color": "from-green-600 to-emerald-500"
-},
- 
-
-    {
   name: 'Software Engineering Job Simulation',
   issuer: 'Accenture (via Forage)',
   date: 'July 3, 2025',
@@ -109,8 +75,43 @@ const Certifications: React.FC = () => {
   ],
   credentialId: 'SY8izkkyB3ng86jTc',
   verifyLink: 'https://drive.google.com/file/d/1LE9c0TFkxoJPFh-eAiVQl-yUwkYXSggh/view?usp=sharing',
-  color: 'from-yellow-500 to-orange-400',
+  color: 'from-purple-500 to-pink-600',
   featured: false
+},
+{
+  "name": "Learn Blockchain and Crypto from Beginning",
+  "issuer": "Udemy (Instructor: Zechariah Tech)",
+  "date": "July 27, 2025",
+  "credentialId": "UC-15a2e7a4-14d2-4490-aefc-93c28f641b0f",
+  "image": "/assets/block.png",
+  "description": "Successfully completed the 'Learn Blockchain and Crypto from Beginning' course on Udemy, gaining foundational knowledge of blockchain technology, cryptocurrency concepts, decentralized networks, and digital assets.",
+  "skills": ["Blockchain Technology", "Cryptocurrency Basics", "Decentralization", "Digital Assets", "Distributed Ledger"],
+  "verifyLink": "https://ude.my/UC-15a2e7a4-14d2-4490-aefc-93c28f641b0f",
+  "color": "from-green-600 to-emerald-500"
+},
+ 
+
+  {
+  "name": "Master JavaScript, HTML, and CSS with 30 Projects in 30 Days",
+  "issuer": "Udemy (Instructor: Vijay Kumar)",
+  "date": "August 4, 2025",
+  "credentialId": "UC-82971d25-71a3-40dd-a6cc-0746aeac08ed",
+  "image": "/assets/jshtml.png",
+  "description": "Successfully completed the 'Master JavaScript, HTML, and CSS with 30 Projects in 30 Days' course on Udemy, building 30 real-world projects to strengthen front-end development skills and gain hands-on experience with core web technologies.",
+  "skills": ["JavaScript", "HTML5", "CSS3", "Responsive Web Design", "Front-End Development", "Web Project Implementation"],
+  "verifyLink": "https://ude.my/UC-82971d25-71a3-40dd-a6cc-0746aeac08ed",
+  "color": "from-purple-500 to-pink-600"
+},  
+{
+  "name": "Schema Patterns and Antipatterns",
+  "issuer": "MongoDB, Inc.",
+  "date": "August 2025",
+  "credentialId": "MDBz6q2p4bqcx",
+  "image": "/assets/mongo.png",
+  "description": "Successfully completed the 'Schema Patterns and Antipatterns' course by MongoDB, gaining expertise in designing optimal database schemas and avoiding common pitfalls.",
+  "skills": ["Database Schema Design", "MongoDB Best Practices", "Schema Patterns", "Schema Antipatterns"],
+  "verifyLink": "https://ti-user-certificates.s3.amazonaws.com/ae62dcd7-abdc-4e90-a570-83eccba49043/911b976a-bc5d-4fa6-9107-ff1161de6efb-kaviya-s-3aff89ab-6b0f-4f60-bcfb-e57b0f31c79c-certificate.pdf",
+  "color": "from-green-600 to-emerald-500"
 },
 {
   name: 'Introduction to Modern AI',
@@ -316,7 +317,7 @@ const Certifications: React.FC = () => {
         </motion.div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
-          {(showAll ? certifications : certifications.slice(0, 8)).map((cert, index) => (
+          {(showAll ? certifications : certifications.slice(0, 4)).map((cert, index) => (
             <motion.div
               key={cert.name}
               initial={{ opacity: 0, y: 30 }}

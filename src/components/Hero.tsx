@@ -1,10 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
-import { ChevronDown } from 'lucide-react';
 
 const Hero: React.FC = () => {
   const [currentRoleIndex, setCurrentRoleIndex] = useState(0);
-  const [currentTime, setCurrentTime] = useState(new Date());
 
   const roles = [
     'Full Stack Developer',
@@ -21,33 +19,15 @@ const Hero: React.FC = () => {
       setCurrentRoleIndex((prev) => (prev + 1) % roles.length);
     }, 3000);
 
-    const timeInterval = setInterval(() => {
-      setCurrentTime(new Date());
-    }, 1000);
+    
 
     return () => {
       clearInterval(roleInterval);
-      clearInterval(timeInterval);
     };
 
   }, [roles.length]);
 
-  const formatTime = (date: Date) => {
-    return date.toLocaleTimeString('en-US', {
-      hour: '2-digit',
-      minute: '2-digit',
-      second: '2-digit',
-    });
-  };
-
-  const formatDate = (date: Date) => {
-    return date.toLocaleDateString('en-US', {
-      weekday: 'long',
-      year: 'numeric',
-      month: 'long',
-      day: 'numeric',
-    });
-  };
+  
 
   return (
     <section id="home" className="min-h-screen pt-24 flex items-center justify-center relative overflow-hidden bg-gradient-to-br from-blue-50 via-white to-purple-50 dark:from-gray-900 dark:via-gray-800 dark:to-purple-900">
@@ -119,20 +99,7 @@ const Hero: React.FC = () => {
             </motion.p>
           </div>
 
-          {/* Live Clock Widget */}
-          <motion.div
-            initial={{ opacity: 0, scale: 0.8 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{ delay: 1 }}
-            className="inline-block bg-gradient-to-r from-blue-200 via-purple-200 to-pink-200 dark:from-indigo-900 dark:via-purple-900 dark:to-pink-900 backdrop-blur-md rounded-2xl p-6 border border-white/30 dark:border-gray-700/30 shadow-xl"
-          >
-            <div className="text-3xl md:text-4xl font-mono font-bold text-gray-900 dark:text-white mb-2">
-              {formatTime(currentTime)}
-            </div>
-            <div className="text-sm md:text-base text-gray-600 dark:text-gray-300">
-              {formatDate(currentTime)}
-            </div>
-          </motion.div>
+          
 
           {/* CTA Buttons */}
           <motion.div
@@ -152,7 +119,7 @@ const Hero: React.FC = () => {
             <motion.button
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              onClick={() => document.querySelector('#contact')?.scrollIntoView({ behavior: 'smooth' })}
+              onClick={() => window.open("https://linkedin.com/in/kaviya-s-90b6a6257", "_blank")}
               className="px-8 py-3 border-2 border-blue-600 text-blue-600 dark:text-blue-400 rounded-full font-medium hover:bg-blue-600 hover:text-white dark:hover:bg-blue-600 dark:hover:text-white transition-all duration-300"
             >
               Get In Touch
@@ -167,13 +134,7 @@ const Hero: React.FC = () => {
           transition={{ delay: 1.5 }}
           className="absolute bottom-8 left-1/2 transform -translate-x-1/2"
         >
-          <motion.div
-            animate={{ y: [0, 10, 0] }}
-            transition={{ duration: 2, repeat: Infinity }}
-            className="text-gray-400 dark:text-gray-500"
-          >
-            <ChevronDown size={32} />
-          </motion.div>
+          
         </motion.div>
       </div>
     </section>

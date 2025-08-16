@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Briefcase, Calendar, MapPin, ExternalLink, Building, Shield } from 'lucide-react';
+import { Briefcase, Calendar, MapPin, ExternalLink, Building, Heart } from 'lucide-react';
 
 interface ExperienceItem {
   title: string;
@@ -32,7 +32,7 @@ const Experience: React.FC = () => {
     'Engineered an intelligent conversational AI assistant that autonomously resolved 85% of user queries, significantly improving user satisfaction and reducing manual support workload'
   ],
   technologies: ['Python', 'HTML,CSS','JavaScript', 'React.js', 'Google API'],
-  icon: <Shield size={24} />,
+  icon: <Heart size={24} />,
   color: 'from-green-600 to-emerald-400'
 },
     {
@@ -49,7 +49,7 @@ const Experience: React.FC = () => {
     'Integrated dynamic dashboards for admin, faculty, and students with role-based access control'
   ],
   technologies: ['HTML/CSS', 'JavaScript', 'React.js', 'Node.js', 'SQL', 'Figma'],
-  icon: <Shield size={24} />,
+  icon: <Heart size={24} />,
   color: 'from-indigo-500 to-purple-500'
   },
 
@@ -71,7 +71,7 @@ const Experience: React.FC = () => {
   technologies: [
     'Python', 'Gemini API', 'MySQL', 'Gamification','PDF Processing'
   ],
-  icon: <Shield size={24} />,
+  icon: <Heart size={24} />,
   color: 'from-yellow-400 to-orange-500'
 },
     {
@@ -88,7 +88,7 @@ const Experience: React.FC = () => {
     'Collaborated with a cross-functional team to integrate real-time patient data updates and secure login features'
   ],
   technologies: ['HTML', 'CSS', 'JavaScript', 'React.js', 'SQL', 'Figma'],
-  icon: <Shield size={24} />,
+  icon: <Heart size={24} />,
   color: 'from-teal-500 to-lime-500'
 },
 {
@@ -103,7 +103,7 @@ const Experience: React.FC = () => {
     'Planned and executed initiatives like National Library Week, and awareness programs across departments'
   ],
   technologies: ['Leadership', 'Communication', 'Event Planning', 'Collaboration'],
-  icon: <Shield size={24} />,
+  icon: <Heart size={24} />,
   color: 'from-pink-500 to-rose-500'
 },
 {
@@ -118,7 +118,7 @@ const Experience: React.FC = () => {
   'Contributed to social service initiatives including blood donation drives, awareness programs, and campus volunteering activities'
   ],
   technologies: ['Leadership', 'Communication', 'Event Planning', 'Collaboration'],
-  icon: <Shield size={24} />,
+  icon: <Heart size={24} />,
   color: 'from-blue-500 to-indigo-500'
 },
 {
@@ -134,7 +134,7 @@ const Experience: React.FC = () => {
     'Published a research paper titled "Secure Vote: Revolutionizing Democracy Through Blockchain Technology"'
   ],
   technologies: ['Teamwork', 'Innovation', 'Technical Events', 'Professional Networking'],
-  icon: <Shield size={24} />,
+  icon: <Heart size={24} />,
   color: 'from-lime-500 to-emerald-600'
 },
     {
@@ -149,7 +149,7 @@ const Experience: React.FC = () => {
     'Contributed to educational support, environmental activities, and community engagement efforts in Varadharajapuram village'
   ],
   technologies: ['Social Impact', 'Community Engagement', 'Teamwork'],
-  icon: <Shield size={24} />,
+  icon: <Heart size={24} />,
   color: 'from-pink-500 to-rose-500'
 },
 {
@@ -164,7 +164,7 @@ const Experience: React.FC = () => {
     'Participated in Google Cloud Jam, exploring cloud fundamentals and hands-on labs through Qwiklabs platform'
   ],
   technologies: ['Google Cloud', 'Qwiklabs', 'Cloud Computing', 'Team Collaboration'],
-  icon: <Shield size={24} />,
+  icon: <Heart size={24} />,
   color: 'from-sky-500 to-indigo-500'
 },
 {
@@ -179,7 +179,7 @@ const Experience: React.FC = () => {
     'Collaborated with faculty and peers to plan and execute knowledge-sharing sessions on industry standards and best practices'
   ],
   technologies: ['Leadership', 'Event Management', 'Technical Seminars', 'Team Collaboration'],
-  icon: <Shield size={24} />, // You can replace this with another icon if you want to differentiate
+  icon: <Heart size={24} />, // You can replace this with another icon if you want to differentiate
   color: 'from-purple-500 to-pink-500' // Custom gradient — change as you like
 },
 {
@@ -195,7 +195,7 @@ const Experience: React.FC = () => {
     'Facilitated peer learning sessions and hands-on activities to boost participation and engagement'
   ],
   technologies: ['Workshop Coordination', 'Soft Skills', 'Peer Learning', 'Public Speaking', 'Leadership'],
-  icon: <Shield size={24} />, // Suitable icon, can be changed as needed
+  icon: <Heart size={24} />, // Suitable icon, can be changed as needed
   color: 'from-yellow-500 to-orange-500'
 }
 
@@ -261,12 +261,19 @@ const Experience: React.FC = () => {
               >
                 {/* Timeline Node */}
                 <motion.div
-                  whileHover={{ scale: 1.2, rotate: 360 }}
-                  transition={{ duration: 0.4 }}
-                  className={`absolute left-8 md:left-1/2 transform md:-translate-x-1/2 -translate-y-1/2 top-1/2 w-16 h-16 bg-gradient-to-r ${experience.color} rounded-full flex items-center justify-center text-white shadow-xl z-10 border-4 border-white dark:border-gray-800`}
-                >
-                  {experience.icon}
-                </motion.div>
+  whileHover={{ scale: 1.05 }}
+  transition={{ duration: 0.2 }}
+  className={`w-12 h-12 md:w-16 md:h-16 bg-gradient-to-r ${experience.color} 
+              rounded-full flex items-center justify-center text-white shadow-xl 
+              border-4 border-white dark:border-gray-800
+              
+              /* Mobile view → keep it left aligned with the line */
+              absolute left-0 top-1/2 -translate-y-1/2 md:left-1/2 md:top-0 
+              md:-translate-x-1/2 md:-translate-y-1/2`}
+>
+  {experience.icon}
+</motion.div>
+
 
                 {/* Experience Card */}
                 <motion.div

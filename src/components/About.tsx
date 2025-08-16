@@ -41,7 +41,7 @@
               </p>
             </motion.div>
 
-            <div className="grid lg:grid-cols-2 gap-12 items-center">
+<div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12 items-start">
               {/* Bio Section */}
               <motion.div
                 initial={{ opacity: 0, x: -30 }}
@@ -131,14 +131,15 @@
                 whileInView={{ opacity: 1, x: 0 }}
                 transition={{ duration: 0.6 }}
                 viewport={{ once: true }}
-                className="grid grid-cols-2 gap-6"
+                className="grid grid-cols-1 sm:grid-cols-2 gap-6"
+
               >
                 {interests.map((interest, index) => (
                   <motion.div
                     key={interest.title}
                     initial={{ opacity: 0, y: 20 }}
                     whileInView={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 0.4, delay: index * 0.05 }}
+                    transition={{ duration: 0.4, delay: index * 0.1 }}
                     viewport={{ once: true }}
                     whileHover={{ 
                       scale: 1.05, 

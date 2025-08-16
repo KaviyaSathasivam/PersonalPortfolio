@@ -170,7 +170,7 @@ const Achievements: React.FC = () => {
     
     
   ];
-   const visibleAchievements = showAll ? achievements : achievements.slice(0, 6);
+   const visibleAchievements = showAll ? achievements : achievements.slice(0,3);
 
 
   const getCategoryColor = (category: string) => {

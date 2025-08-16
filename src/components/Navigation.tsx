@@ -76,14 +76,20 @@ const Navigation: React.FC = () => {
             ))}
             
             <motion.button
-              whileHover={{ scale: 1.05, y: -2 }}
-              whileTap={{ scale: 0.95 }}
-              onClick={handleResumeClick}
-              className="flex items-center space-x-2 px-4 py-2 bg-gradient-to-r from-blue-600 to-purple-600 text-white rounded-full font-medium shadow-lg hover:shadow-xl transition-all duration-300"
-            >
-              <FileText size={18} />
-              <span>Resume</span>
-            </motion.button>
+  whileHover={{ scale: 1.05, y: -2 }}
+  whileTap={{ scale: 0.95 }}
+  onClick={handleResumeClick}
+  className="flex items-center justify-center space-x-2 
+    px-5 py-2.5 w-full md:w-auto 
+    bg-gradient-to-r from-indigo-500 via-purple-600 to-pink-600 
+    text-white font-semibold rounded-full 
+    shadow-lg hover:shadow-2xl 
+    transition-all duration-300 hover:scale-110"
+>
+  <FileText size={18} />
+  <span>Resume</span>
+</motion.button>
+
 
             <motion.button
               whileHover={{ scale: 1.05 }}
@@ -139,8 +145,12 @@ const Navigation: React.FC = () => {
               whileHover={{ scale: 1.02, x: 10 }}
               whileTap={{ scale: 0.98 }}
               onClick={handleResumeClick}
-              className="flex items-center space-x-2 w-full px-6 py-3 text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 hover:bg-gradient-to-r hover:from-blue-50 hover:to-purple-50 dark:hover:from-blue-900/20 dark:hover:to-purple-900/20 transition-all duration-300 font-medium"
-            >
+className="flex items-center space-x-2
+    w-fit px-4 py-2.5 
+    bg-gradient-to-r from-indigo-500 via-purple-600 to-pink-600 
+    text-white font-semibold rounded-full 
+    shadow-lg hover:shadow-2xl 
+    transition-all duration-300 hover:scale-110"            >
               <FileText size={18} />
               <span>Resume</span>
             </motion.button>
